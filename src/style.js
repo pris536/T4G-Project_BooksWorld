@@ -1,9 +1,18 @@
 const toggle = document.getElementById('menuToggle');
-  const nav = document.getElementById('primaryNav');
+const nav = document.getElementById('primaryNav');
+
+if (toggle && nav) {
   toggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
+    const isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    toggle.textContent = isOpen ? '×' : '☰';
   });
-  // close mobile menu after a link is clicked
+
   nav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => nav.classList.remove('open'));
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = '☰';
+    });
   });
+}
