@@ -592,10 +592,13 @@
     .subscribe-form input{width:min(320px,90vw);}
     nav.primary{display:none;order:3;width:100%;}
     nav.primary.open{display:block;}
-    nav.primary > ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 16px;padding:8px 0 4px;}
-    nav.primary > ul > li > a{font-size:0.78rem;white-space:normal;padding:9px 2px;}
+    nav.primary > ul{display:flex;flex-direction:column;gap:0;padding:8px 0 4px;}
+    nav.primary > ul > li > a{font-size:0.82rem;white-space:normal;padding:10px 2px;border-bottom:1px solid rgba(42,27,20,0.12);}
     .auth-row{padding:0 20px 8px;}
     .wrap{padding:0 20px;}
+    .hero-grid{min-height:650px;align-items:flex-start;padding-top:42px;}
+    .hero-copy{max-width:100%;padding:22px 18px;border-radius:16px;background:rgba(253,243,238,0.94);box-shadow:var(--shadow);}
+    .hero-copy p.lead{margin:16px 0 24px;max-width:100%;font-size:0.95rem;line-height:1.65;}
     .feature-grid{grid-template-columns:1fr;}
     .review-grid{grid-template-columns:1fr;}
     .club-grid{grid-template-columns:1fr;}
