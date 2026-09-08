@@ -1,8 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" type="image/png" sizes="32x32" href="images/logo booksworld.png"><link rel="apple-touch-icon" sizes="180x180" href="images/logo booksworld.png">
-<script src="src/style.js"></script>
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Discussions | BooksWorld</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="src/style.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussions | BooksWorld</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo booksworld.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo booksworld.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/discussions.css">
+
     <script src="https://kit.fontawesome.com/24e7f39320.js" crossorigin="anonymous"></script>
-</head>
-<body><header><div class="nav-row"><a class="logo" href="index.html#top"><img src="images/logo booksworld.png" alt="BooksWorld logo"></a><nav class="primary"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact us</a></li><li><a href="community.html">Community</a></li><li><a href="myspace.html">My space</a></li><li><a href="discussions.html" class="active">Discussions</a></li><li><a href="challenges.html">Challenges</a></li></ul></nav></div><div class="auth-row"><div class="auth-buttons"><a href="login.html" class="btn btn-outline">Log in</a><a href="signup.html" class="btn btn-solid">Sign up</a></div></div></header><main class="inner-page"><section class="page-hero"><p class="eyebrow">DISCUSSIONS</p><h1>Say what the story made you feel.</h1><p>Join thoughtful conversations, share interpretations, and find new perspectives from readers around the world.</p></section><section class="page-panel"><h2>Latest conversations</h2><div class="page-grid"><article><h3>What makes a classic?</h3><p>Readers compare the stories that have stayed with them.</p></article><article><h3>Best books this month</h3><p>Swap recommendations and build your next reading list.</p></article><article><h3>Favorite opening lines</h3><p>Celebrate the sentences that pull us into a new world.</p></article></div></section></main><footer><div class="footer-columns"><div class="footer-col"><h4>Company</h4><ul><li><a href="#terms">Terms of use</a></li><li><a href="#privacy">Privacy</a></li><li><a href="#pricing">Pricing</a></li></ul></div><div class="footer-col"><h4>About</h4><ul><li><a href="#myspace">My Space</a></li><li><a href="#challenges">Challenges</a></li><li><a href="#discussion-questions">Discussion questions</a></li></ul></div><div class="footer-col"><h4>Community</h4><ul><li><a href="#blog">Blog</a></li><li><a href="#join-club">Join a book club</a></li><li><a href="#create-club">Create a bookclub</a></li></ul></div><div class="footer-col"><h4>Support</h4><ul><li><a href="#myspace">My Space</a></li><li><a href="#faqs">FAQs</a></li><li><a href="#pricing">Pricing</a></li></ul></div></div><div class="footer-connect"><h4>Connect</h4><p>Join the BooksWorld newsletter for book recommendations, info, giveaways and more.</p><form class="subscribe-form"><label class="sr-only" for="footer-email">Email address</label><input id="footer-email" type="email" placeholder="Email address" required><button class="btn btn-solid" type="submit">Subscribe</button></form></div><div class="footer-bottom"><p>© 2026 BooksWorld, Inc. All rights reserved.</p></div></footer></body></html>
+    <script src="src/style.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-row">
+        <a class="logo" href="index.html#top">
+          <img src="images/logo booksworld.png" alt="BooksWorld logo">
+        </a>
+
+        <nav class="primary" id="primaryNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="myspace.html">My space</a></li>
+            <li><a class="active" href="discussions.html">Discussions</a></li>
+            <li><a href="challenges.html">Challenges</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="auth-row">
+        <div class="auth-buttons">
+          <a class="btn btn-outline" href="login.html">Log in</a>
+          <a class="btn btn-solid" href="signup.html">Sign up</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="inner-page">
+      <section class="page-hero">
+        <p class="eyebrow">DISCUSSIONS</p>
+        <h1>Say What The Story Made You Feel</h1>
+        <p>
+          Join thoughtful conversations, share interpretations, leave comments
+          and find new perspectives from readers around the world.
+        </p>
+      </section>
+
+      <section class="discussion-start-section" id="new-discussion">
+        <div class="discussion-start-copy">
+          <p class="eyebrow">YOUR TURN</p>
+          <h2>Bring your reading thoughts to the table.</h2>
+          <p>
+            Start with a question, a favorite line, or the moment you could
+            not stop thinking about. Every great conversation begins with one
+            honest reaction.
+          </p>
+        </div>
+
+        <div class="discussion-prompt-grid">
+          <article class="discussion-prompt-card">
+            <span class="prompt-number">01</span>
+            <h3>Ask a question</h3>
+            <p>Invite readers to look closer at a character, choice, or ending.</p>
+          </article>
+
+          <article class="discussion-prompt-card">
+            <span class="prompt-number">02</span>
+            <h3>Share a reaction</h3>
+            <p>Tell the community which scene stayed with you after the final page.</p>
+          </article>
+
+          <article class="discussion-prompt-card">
+            <span class="prompt-number">03</span>
+            <h3>Recommend a novel</h3>
+            <p>Help another reader find their next unforgettable story.</p>
+          </article>
+        </div>
+
+        <div class="hot-picks">
+          <div class="hot-picks-heading">
+            <p class="eyebrow">HOT PICKS</p>
+            <h2>What readers are talking about</h2>
+          </div>
+
+          <div class="hot-picks-grid">
+            <a class="hot-pick-card" href="#new-discussion" aria-label="Discuss the best Rom Com of 2026">
+              <span class="prompt-number">01</span>
+              <h3>Best Rom Com of 2026</h3>
+            </a>
+
+            <a class="hot-pick-card" href="#new-discussion" aria-label="Discuss underrated books of 2023">
+              <span class="prompt-number">02</span>
+              <h3>Underrated Books of 2023</h3>
+            </a>
+
+            <a class="hot-pick-card" href="#new-discussion" aria-label="Discuss the best comedy books of 2024">
+              <span class="prompt-number">03</span>
+              <h3>Best Comedy for 2024</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-panel">
+        <h2>Latest conversations</h2>
+
+        <a class="general-discussion-link" href="#new-discussion">
+          General Discussion Questions
+        </a>
+        <p class="general-discussion-copy">
+          Every Book Has A Million Voices Share Yours.<br>
+          Start new discussion <a class="start-discussion-link" href="#new-discussion">here</a>.
+        </p>
+
+        <div class="page-grid">
+          <article>
+            <h3>What makes a classic?</h3>
+            <p>Readers compare the stories that have stayed with them.</p>
+          </article>
+
+          <article>
+            <h3>Best books this month</h3>
+            <p>Swap recommendations and build your next reading list.</p>
+          </article>
+
+          <article>
+            <h3>Favorite opening lines</h3>
+            <p>Celebrate the sentences that pull us into a new world.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="discussion-discover-section">
+        <div class="discussion-section-heading">
+          <p class="eyebrow">REVIEWS</p>
+          <h2>Reader reviews</h2>
+          <p>you might like</p>
+        </div>
+
+        <div class="discover-card-grid">
+          <a class="discover-card" href="#new-discussion">
+            <img src="images/discuss_pics/honest lie.png" alt="Book cover for Honest Lie">
+            <div class="discover-card-content">
+              <h3>Honest Lie</h3>
+              <p><strong>1,248</strong> reading this week</p>
+              <p><strong>386</strong> reactions</p>
+            </div>
+          </a>
+
+          <a class="discover-card" href="#new-discussion">
+            <img src="images/discuss_pics/house maid secret.png" alt="Book cover for The Housemaid's Secret">
+            <div class="discover-card-content">
+              <h3>The Housemaid's Secret</h3>
+              <p><strong>2,016</strong> reading this week</p>
+              <p><strong>514</strong> reactions</p>
+            </div>
+          </a>
+
+          <a class="discover-card" href="#new-discussion">
+            <img src="images/discuss_pics/it happened.png" alt="Book cover for It Happened One Summer">
+            <div class="discover-card-content">
+              <h3>It Happened</h3>
+              <p><strong>984</strong> reading this week</p>
+              <p><strong>241</strong> reactions</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="discussion-discover-section recommendations-section">
+        <div class="discussion-section-heading">
+          <p class="eyebrow">RECOMMENDATIONS</p>
+          <h2>Fresh picks for your shelf</h2>
+          <p>you might like</p>
+        </div>
+
+        <div class="discover-card-grid">
+          <a class="discover-card" href="#new-discussion">
+            <img src="images/discuss_pics/my killer vac.png" alt="Book cover for My Killer Vacation">
+            <div class="discover-card-content">
+              <h3>My Killer Vacation</h3>
+              <p><strong>1,537</strong> reading this week</p>
+              <p><strong>428</strong> reactions</p>
+            </div>
+          </a>
+
+          <a class="discover-card" href="#new-discussion">
+            <img src="images/discuss_pics/nancy drew.png" alt="Book cover for Nancy Drew">
+            <div class="discover-card-content">
+              <h3>Nancy Drew</h3>
+              <p><strong>1,104</strong> reading this week</p>
+              <p><strong>302</strong> reactions</p>
+            </div>
+          </a>
+
+          <a class="discover-card" href="#new-discussion">
+            <img src="images/discuss_pics/second husbi.png" alt="Book cover for The Second Husband">
+            <div class="discover-card-content">
+              <h3>The Second Husband</h3>
+              <p><strong>876</strong> reading this week</p>
+              <p><strong>197</strong> reactions</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#terms">Terms of use</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#myspace">My Space</a></li>
+            <li><a href="#challenges">Challenges</a></li>
+            <li><a href="#discussion-questions">Discussion questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#join-club">Join a book club</a></li>
+            <li><a href="#create-club">Create a bookclub</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#myspace">My Space</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-connect">
+        <h4>Connect</h4>
+        <p>
+          Join the BooksWorld newsletter for book recommendations, info,
+          giveaways and more.
+        </p>
+
+        <form class="subscribe-form">
+          <label class="sr-only" for="footer-email">Email address</label>
+          <input id="footer-email" type="email" placeholder="Email address" required>
+          <button class="btn btn-solid" type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 BooksWorld, Inc. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
