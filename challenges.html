@@ -1,10 +1,221 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<link rel="icon" type="image/png" sizes="32x32" href="images/logo booksworld.png"><link rel="apple-touch-icon" sizes="180x180" href="images/logo booksworld.png">
-<script src="src/style.js"></script>
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Challenges | BooksWorld</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="src/style.css"><link rel="stylesheet" href="src/challenges.css">
-    <script src="https://kit.fontawesome.com/24e7f39320.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges | BooksWorld</title>
 
-<body><header><div class="nav-row"><a class="logo" href="index.html#top"><img src="images/logo booksworld.png" alt="BooksWorld logo"></a><nav class="primary"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact us</a></li><li><a href="community.html">Community</a></li><li><a href="myspace.html">My space</a></li><li><a href="discussions.html">Discussions</a></li><li><a href="challenges.html" class="active">Challenges</a></li></ul></nav></div><div class="auth-row"><div class="auth-buttons"><a href="login.html" class="btn btn-outline">Log in</a><a href="signup.html" class="btn btn-solid">Sign up</a></div></div></header>
-    <main class="inner-page"><section class="page-hero"><p class="eyebrow">READING CHALLENGES</p><h1>Make room for one more chapter.</h1><p>Set a goal, discover new genres, and keep your momentum with friendly reading challenges.</p><a href="signup.html" class="btn btn-rose">Join a challenge</a></section><section class="page-panel"><h2>Start with a goal</h2><div class="page-grid"><article><h3>12 books in 12 months</h3><p>A steady pace for a year of memorable stories.</p></article><article><h3>Genre explorer</h3><p>Step outside your usual shelf and try something new.</p></article><article><h3>Community picks</h3><p>Read the books selected by fellow BooksWorld members.</p></article></div></section></main><footer><div class="footer-columns"><div class="footer-col"><h4>Company</h4><ul><li><a href="#terms">Terms of use</a></li><li><a href="#privacy">Privacy</a></li><li><a href="#pricing">Pricing</a></li></ul></div><div class="footer-col"><h4>About</h4><ul><li><a href="#myspace">My Space</a></li><li><a href="#challenges">Challenges</a></li><li><a href="#discussion-questions">Discussion questions</a></li></ul></div><div class="footer-col"><h4>Community</h4><ul><li><a href="#blog">Blog</a></li><li><a href="#join-club">Join a book club</a></li><li><a href="#create-club">Create a bookclub</a></li></ul></div><div class="footer-col"><h4>Support</h4><ul><li><a href="#myspace">My Space</a></li><li><a href="#faqs">FAQs</a></li><li><a href="#pricing">Pricing</a></li></ul></div></div><div class="footer-connect"><h4>Connect</h4><p>Join the BooksWorld newsletter for book recommendations, info, giveaways and more.</p><form class="subscribe-form"><label class="sr-only" for="footer-email">Email address</label><input id="footer-email" type="email" placeholder="Email address" required><button class="btn btn-solid" type="submit">Subscribe</button></form></div><div class="footer-bottom"><p>© 2026 BooksWorld, Inc. All rights reserved.</p></div></footer></body></html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/challenges.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo booksworld.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo booksworld.png">
+    <script src="src/style.js"></script>
+    <script src="https://kit.fontawesome.com/24e7f39320.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-row">
+        <a class="logo" href="index.html#top">
+          <img src="images/logo booksworld.png" alt="BooksWorld logo">
+        </a>
+
+        <nav class="primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="myspace.html">My space</a></li>
+            <li><a href="discussions.html">Discussions</a></li>
+            <li><a href="challenges.html" class="active">Challenges</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="auth-row">
+        <div class="auth-buttons">
+          <a href="login.html" class="btn btn-outline">Log in</a>
+          <a href="signup.html" class="btn btn-solid">Sign up</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="inner-page">
+      <section class="page-hero challenge-hero">
+        <div class="challenge-hero-copy">
+          <p class="eyebrow">READING CHALLENGES</p>
+          <h1>Challenge Yourself. Read More. Discover More.</h1>
+          <p>Set a goal, discover new genres, and keep your momentum with friendly reading challenges.</p>
+          <p>Join in exciting challenges and earn rewards!</p>
+          <a href="signup.html" class="btn btn-rose">Join a challenge</a>
+        </div>
+        <div class="challenge-hero-image">
+          <img src="images/the5bkchallenge.jpg" alt="Colorful 54321 book challenge poster">
+        </div>
+      </section>
+
+      <section class="page-panel" id="top-challenges">
+        <div class="page-panel-header">
+          <div>
+            <h2>Start With A Goal</h2>
+            <h3>Featured Challenges</h3>
+          </div>
+        </div>
+
+        <div class="page-grid">
+          <a href="signup.html" class="challenge-card">
+            <div class="challenge-card__content">
+              <span class="challenge-pill">12 months</span>
+              <h3>12 books in 12 months</h3>
+              <p>A steady pace for a year of memorable stories.</p>
+              <span class="challenge-link">StartChallenge <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+
+          <a href="signup.html" class="challenge-card">
+            <div class="challenge-card__content">
+              <span class="challenge-pill">New genre</span>
+              <h3>Genre Explorer</h3>
+              <p>Step outside your usual shelf and try something new.</p>
+              <span class="challenge-link">Start Challenge <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+
+          <a href="signup.html" class="challenge-card">
+            <div class="challenge-card__content">
+              <span class="challenge-pill">Community</span>
+              <h3>African Women Rise</h3>
+              <p>Read 5 books by African women authors and support their voices.</p>
+              <span class="challenge-link">Start Challenge <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+
+        <a href="signup.html" class="explore-more-btn">Explore More Challenges <i class="fa-solid fa-arrow-right"></i></a>
+      </section>
+
+      <section class="leaderboard-section" id="leaderboard" aria-labelledby="leaderboard-title">
+        <div class="leaderboard-header">
+          <div>
+            <p class="eyebrow">COMMUNITY MILESTONES</p>
+            <h2 id="leaderboard-title">Leaderboard <a class="leaderboard-heading-link" href="#leaderboard-list" aria-label="View leaderboard rankings">
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </a></h2>
+            <p>See who is making the most of their reading goals this week.</p>
+          </div>
+          <button class="leaderboard-filter" type="button" aria-label="Choose leaderboard time period">
+            <span>This Week</span>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="leaderboard-podium">
+          <article class="leaderboard-topper leaderboard-topper--second">
+            <span class="leaderboard-medal">2</span>
+            <div class="leaderboard-avatar">CR</div>
+            <h3>@CarlReu</h3>
+            <strong>2144 <span>PTS</span></strong>
+          </article>
+
+          <article class="leaderboard-topper leaderboard-topper--first">
+            <span class="leaderboard-medal">1</span>
+            <div class="leaderboard-avatar">LL</div>
+            <h3>@Leel47</h3>
+            <strong>3045 <span>PTS</span></strong>
+          </article>
+
+          <article class="leaderboard-topper leaderboard-topper--third">
+            <span class="leaderboard-medal">3</span>
+            <div class="leaderboard-avatar">HE</div>
+            <h3>@Hermainee</h3>
+            <strong>2016 <span>PTS</span></strong>
+          </article>
+        </div>
+
+        <div class="leaderboard-list" id="leaderboard-list">
+          <div class="leaderboard-row">
+            <span class="leaderboard-rank">★</span>
+            <div class="leaderboard-avatar leaderboard-avatar--small">JR</div>
+            <strong>@JohnRick731</strong>
+            <span class="leaderboard-points">1970 PTS</span>
+            <span class="leaderboard-progress"><span style="width: 82%"></span></span>
+          </div>
+
+          <div class="leaderboard-row">
+            <span class="leaderboard-rank">★</span>
+            <div class="leaderboard-avatar leaderboard-avatar--small">P9</div>
+            <strong>@Peter94</strong>
+            <span class="leaderboard-points">1621 PTS</span>
+            <span class="leaderboard-progress"><span style="width: 68%"></span></span>
+          </div>
+
+          <div class="leaderboard-row">
+            <span class="leaderboard-rank">★</span>
+            <div class="leaderboard-avatar leaderboard-avatar--small">HS</div>
+            <strong>@HannSSS</strong>
+            <span class="leaderboard-points">1182 PTS</span>
+            <span class="leaderboard-progress"><span style="width: 52%"></span></span>
+          </div>
+        </div>
+      </section>
+ </main>
+
+    <footer>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#terms">Terms of use</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#myspace">My Space</a></li>
+            <li><a href="#challenges">Challenges</a></li>
+            <li><a href="#discussion-questions">Discussion questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#join-club">Join a book club</a></li>
+            <li><a href="#create-club">Create a bookclub</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#myspace">My Space</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-connect">
+        <h4>Connect</h4>
+        <p>Join the BooksWorld newsletter for book recommendations, info, giveaways and more.</p>
+        <form class="subscribe-form">
+          <label class="sr-only" for="footer-email">Email address</label>
+          <input id="footer-email" type="email" placeholder="Email address" required>
+          <button class="btn btn-solid" type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 BooksWorld, Inc. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

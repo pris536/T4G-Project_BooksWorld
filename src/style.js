@@ -1,4 +1,80 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const dropdownMenus = {
+    'discussions.html': [
+      ['Reviews & Recommendations', 'discussions.html#reviews-recommendations'],
+      ['Author Talks', 'discussions.html#new-discussion'],
+      ['Top Discussions', 'discussions.html#top-discussions'],
+      ['Comments', 'discussions.html#comments']
+    ],
+    'challenges.html': [
+      ['Top Challenges', 'challenges.html#top-challenges'],
+      ['Leaderboard', 'challenges.html#leaderboard-list'],
+      ['Giveaways', 'challenges.html#giveaways'],
+      ['Badges', 'challenges.html#badges']
+    ],
+    'myspace.html': [
+      ['My Bookclubs', 'myspace.html#my-bookclubs'],
+      ['My Library', 'myspace.html#my-library'],
+      ['My Blog', 'myspace.html#blog'],
+      ['My Comments', 'myspace.html#my-comments'],
+      ['My Challenges', 'myspace.html#my-challenges'],
+      ['Chat', 'myspace.html#chat']
+    ],
+    'community.html': [
+      ['Blogs', 'community.html#blog'],
+      ['Bookclubs', 'community.html#bookclubs'],
+      ['Community Polls', 'community.html#status']
+    ]
+  };
+
+  Object.entries(dropdownMenus).forEach(([page, items]) => {
+    document.querySelectorAll(`nav.primary a[href$="${page}"]`).forEach((parentLink) => {
+      const parentItem = parentLink.closest('li');
+
+      if (!parentItem || parentItem.querySelector('.nav-dropdown-menu')) {
+        return;
+      }
+
+      parentItem.classList.add('nav-dropdown');
+
+      if (!parentLink.querySelector('.caret')) {
+        const caret = document.createElement('span');
+        caret.className = 'caret';
+        caret.setAttribute('aria-hidden', 'true');
+        caret.textContent = '▾';
+        parentLink.append(caret);
+      }
+
+      const menu = document.createElement('ul');
+      menu.className = 'nav-dropdown-menu';
+      menu.innerHTML = items
+        .map(([label, href]) => `<li><a href="${href}">${label}</a></li>`)
+        .join('');
+      parentItem.append(menu);
+    });
+  });
+
+  const footerDestinations = {
+    'terms of use': 'about.html#terms',
+    privacy: 'about.html#privacy',
+    pricing: 'signup.html#pricing',
+    'my space': 'myspace.html',
+    challenges: 'challenges.html',
+    'discussion questions': 'discussions.html#new-discussion',
+    blog: 'community.html#blog',
+    'join a book club': 'index.html#community',
+    'create a bookclub': 'index.html#community',
+    faqs: 'contact.html#faqs'
+  };
+
+  document.querySelectorAll('footer a').forEach((footerLink) => {
+    const destination = footerDestinations[footerLink.textContent.trim().toLowerCase()];
+
+    if (destination) {
+      footerLink.href = destination;
+    }
+  });
+
   const nav = document.getElementById('primaryNav') || document.querySelector('nav.primary');
   let toggle = document.getElementById('menuToggle');
 
@@ -152,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <article class="discussion-slide">
           <div class="novel-cover">
             THE<br>
-            ABDUCTED<br>
+      ABDUCTED<br>
             
           </div>
           <div>
