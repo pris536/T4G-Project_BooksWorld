@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+const initializePage = () => {
   const dropdownMenus = {
     'discussions.html': [
       ['Reviews & Recommendations', 'discussions.html#reviews-recommendations'],
@@ -73,6 +73,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (destination) {
       footerLink.href = destination;
     }
+  });
+
+  const welcomeChat = document.querySelector('.welcome-chat');
+  const welcomeChatClose = welcomeChat?.querySelector('.welcome-chat-close');
+
+  welcomeChatClose?.addEventListener('click', () => {
+    welcomeChat.classList.add('is-dismissed');
+  });
+
+  window.addEventListener('pageshow', () => {
+    welcomeChat?.classList.remove('is-dismissed');
   });
 
   const nav = document.getElementById('primaryNav') || document.querySelector('nav.primary');
@@ -208,7 +219,6 @@ document.addEventListener('DOMContentLoaded', () => {
     emailLink.innerHTML = '<i class="fa-solid fa-envelope" aria-hidden="true"></i><span>booksworldxx@gmail.com</span>';
     contactForm.closest('.form-card').append(emailLink);
   }
-
   const pageHero = document.querySelector('.page-hero');
 
   if (pageHero && document.title.startsWith('Discussions')) {
@@ -220,6 +230,11 @@ document.addEventListener('DOMContentLoaded', () => {
         Join thoughtful conversations, share interpretations,leave comments and find new
         perspectives from readers around the world.
       </p>
+      <form class="book-search" role="search">
+        <label class="sr-only" for="discussion-book-search">Search books</label>
+        <input id="discussion-book-search" type="search" placeholder="search book by title or author">
+        <button type="submit" aria-label="Search books"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+      </form>
       <a class="btn btn-rose discussion-cta" href="#new-discussion">
         Start New Discussion
       </a>
@@ -268,29 +283,11 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
 
       <div class="discussion-controls">
-        <button
-          class="discussion-arrow"
-          type="button"
-          data-slide="previous"
-          aria-label="Previous comment"
-        >
-          &#8592;
-        </button>
-
         <div class="discussion-dots" aria-label="Choose a comment">
           <button class="discussion-dot" type="button" aria-label="Show first comment"></button>
           <button class="discussion-dot" type="button" aria-label="Show second comment"></button>
           <button class="discussion-dot" type="button" aria-label="Show third comment"></button>
         </div>
-
-        <button
-          class="discussion-arrow"
-          type="button"
-          data-slide="next"
-          aria-label="Next comment"
-        >
-          &#8594;
-        </button>
       </div>
     `;
   }
@@ -321,22 +318,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const restartRotation = () => {
       window.clearInterval(rotation);
-      rotation = window.setInterval(() => showSlide(currentSlide + 1), 6000);
+      rotation = window.setInterval(() => showSlide(currentSlide + 1), 10000);
     };
-
-    discussionHero
-      .querySelector('[data-slide="previous"]')
-      .addEventListener('click', () => {
-        showSlide(currentSlide - 1);
-        restartRotation();
-      });
-
-    discussionHero
-      .querySelector('[data-slide="next"]')
-      .addEventListener('click', () => {
-        showSlide(currentSlide + 1);
-        restartRotation();
-      });
 
     dots.forEach((dot, dotIndex) => {
       dot.addEventListener('click', () => {
@@ -354,4 +337,13 @@ document.addEventListener('DOMContentLoaded', () => {
     showSlide(0);
     restartRotation();
   }
-});
+};
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializePage, { once: true });
+} else {
+  initializePage();
+}
+
+
+
